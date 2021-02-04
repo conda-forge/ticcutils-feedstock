@@ -1,5 +1,5 @@
 {% set name = "ticcutils" %}
-{% set version = "0.22" %}
+{% set version = "0.25" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/LanguageMachines/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: "5db4896826278fb9ce17bea17ddc79d59dc2a97711ab44f15a2e854f074701c7" # v0.22
+  sha256: 713acaf0ce688fb4ddf8703b343e62be7856cd6b1495409a21c8915bc4225244   # v0.22
 
 build:
-  number: 2
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
   run_exports:
     - ticcutils
 
@@ -47,7 +47,7 @@ about:
   license: GPL-3.0
   license_family: GPL
   license_file: COPYING
-  summary: 'A generic utility library shared by Tilburg centre for Cognition and Communication (TiCC) software'
+  summary: A generic utility library shared by Tilburg centre for Cognition and Communication (TiCC) software
   dev_url: https://github.com/LanguageMachines/ticcutils
 
 extra:
