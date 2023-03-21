@@ -1,11 +1,11 @@
-About ticcutils
-===============
+About ticcutils-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ticcutils-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/LanguageMachines/ticcutils
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ticcutils-feedstock/blob/main/LICENSE.txt)
 
 Summary: A generic utility library shared by Tilburg centre for Cognition and Communication (TiCC) software
 
