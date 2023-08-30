@@ -11,7 +11,7 @@ source:
   sha256: 7aaf9b87cd7218891853b6267f402fd51c53078394120c3f9e7ec8c63de928b1   # v0.22
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
   run_exports:
     - ticcutils
