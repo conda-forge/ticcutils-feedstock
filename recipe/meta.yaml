@@ -11,7 +11,7 @@ source:
   sha256: 1058bd4dc148ab51e9d7c899eedb610123b2d2821f0fea6e0158f0500e333be7   # v0.22
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   run_exports:
     - ticcutils
@@ -19,6 +19,7 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - autoconf
     - autoconf-archive
     - automake
