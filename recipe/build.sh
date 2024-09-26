@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export CXXFLAGS="${CXXFLAGS} -D_LIBCPP_DISABLE_AVAILABILITY"
 sh bootstrap.sh
 ./configure --prefix=$PREFIX
 make
