@@ -1,5 +1,5 @@
 {% set name = "ticcutils" %}
-{% set version = "0.36" %}
+{% set version = "0.37" %}
 
 package:
   name: {{ name|lower }}
@@ -8,10 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/LanguageMachines/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0ffd85e0f74efe7cbf7948091569d86f0eca10829305cb6fc15cfb83e2c9c47e   # v0.22
+  sha256: 38eeb2ae8554678a5e363000c8e93e9e1f2c633eca414acfee94539e91a9fbc7   # v0.22
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
   run_exports:
     - ticcutils
