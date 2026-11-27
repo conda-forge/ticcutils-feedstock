@@ -20,9 +20,6 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
-    - autoconf
-    - autoconf-archive
-    - automake
     - make
     - libtool
     - pkgconf
