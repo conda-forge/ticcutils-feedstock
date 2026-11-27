@@ -8,10 +8,10 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/LanguageMachines/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7187098e16996b8c175b20200f71c8a51415bfdcedd197fb26ae74dcc5516e21   # v0.22
+  sha256: 7187098e16996b8c175b20200f71c8a51415bfdcedd197fb26ae74dcc5516e21
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   run_exports:
     - ticcutils
@@ -20,12 +20,9 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
-    - autoconf
-    - autoconf-archive
-    - automake
     - make
     - libtool
-    - pkg-config
+    - pkgconf
   host:
     - libtar
     - libxml2-devel
